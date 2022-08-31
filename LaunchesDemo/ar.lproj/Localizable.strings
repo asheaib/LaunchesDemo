@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  LaunchesDemo
+
+  Created by hadi on 26/08/2022.
+  
+*/
+
+Launches_title="الاطلاقات";
+Big_Launch_title="الاطلاق الكبير";
+Gold="ذهبي";
+Space_ships="سفن الفضاء";
+Connection_error="خطأ في الإتصال! الرجاء معاودة المحاولة في وقت لاحق.";
+No_information_provided="لا توجد معلومات";

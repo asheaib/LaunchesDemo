@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel=" file's owner" customClass="CustomBlocker">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="oRz-oR-2w6"/>
+                <outlet property="indicator" destination="Hom-jD-7j0" id="BTp-wi-cTK"/>
+                <outlet property="loadingView" destination="KSw-7Y-9vF" id="QzG-t6-evZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="view" customClass="CustomBlocker" customModule="LaunchesDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="828"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F5-8J-4nS">
+                    <rect key="frame" x="0.0" y="0.0" width="401" height="828"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSw-7Y-9vF" customClass="ShadedView" customModule="LaunchesDemo" customModuleProvider="target">
+                    <rect key="frame" x="165.66666666666666" y="379" width="70" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hom-jD-7j0" customClass="MDCActivityIndicator">
+                            <rect key="frame" x="10.333333333333343" y="10.666666666666686" width="49" height="49"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Hom-jD-7j0" secondAttribute="height" id="eK2-gR-rtn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Hom-jD-7j0" firstAttribute="width" secondItem="KSw-7Y-9vF" secondAttribute="width" multiplier="0.7" id="Ven-lI-prd"/>
+                        <constraint firstItem="Hom-jD-7j0" firstAttribute="centerY" secondItem="KSw-7Y-9vF" secondAttribute="centerY" id="WSW-R9-ihq"/>
+                        <constraint firstAttribute="width" constant="70" id="lLH-rj-PXb"/>
+                        <constraint firstItem="Hom-jD-7j0" firstAttribute="centerX" secondItem="KSw-7Y-9vF" secondAttribute="centerX" id="vhx-8o-cHL"/>
+                        <constraint firstAttribute="width" secondItem="KSw-7Y-9vF" secondAttribute="height" id="xWC-hk-xTx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1F5-8J-4nS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4PE-4p-6bg"/>
+                <constraint firstItem="KSw-7Y-9vF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CyC-BV-OPe"/>
+                <constraint firstItem="1F5-8J-4nS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DMD-hf-fKR"/>
+                <constraint firstItem="1F5-8J-4nS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Fg0-lE-4NP"/>
+                <constraint firstItem="1F5-8J-4nS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="fzh-CZ-UGT"/>
+                <constraint firstItem="KSw-7Y-9vF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sjd-cT-71a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="18.840579710144929" y="130.43478260869566"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Hom-jD-7j0">
+            <size key="intrinsicContentSize" width="26.5" height="26.5"/>
+        </designable>
+    </designables>
+</document>
